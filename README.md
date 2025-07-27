@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# 🕒 Clock App – React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A full-featured clock application built using **React Native**, offering essential time tools including **Alarm**, **World Clock**, **Stopwatch**, **Countdown Timer**, and customizable **Digital and Analog** clock views. Designed to be intuitive and functional across Android and iOS devices.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+### ⏰ Alarm
+- Set multiple alarms with custom labels
+- Repeat alarms on selected days
+- Sound and vibration support
+- Toggle on/off functionality
 
-2. Start the app
+### 🌍 World Clock
+- Add clocks from different time zones
+- View current times in major cities
+- Handles DST (Daylight Saving Time)
 
-   ```bash
-    npx expo start
-   ```
+### ⏱️ Stopwatch
+- Start, pause, reset functionality
+- Lap recording with timestamps
+- Accurate time tracking even in background
 
-In the output, you'll find options to open the app in a
+### ⏳ Countdown Timer
+- Set custom countdown durations
+- Alerts on completion
+- Optional vibration or sound
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🕹️ Clock Views
+- Digital Clock: Clean, minimal UI with real-time updates
+- Analog Clock: Smooth, animated hands with hour, minute, second dials
+- Dark and Light themes support
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+- **Framework**: React Native
+- **Navigation**: React Navigation
+- **State Management**: useState / useContext / Redux (if needed)
+- **Time Management**: JavaScript Date APIs / moment.js / dayjs
+- **Animations**: React Native Reanimated / Animated API
+- **Notifications**: react-native-push-notification / expo-notifications
+- **Time Zones**: moment-timezone / luxon
+
+---
+
+## 📁 Folder Structure
+
+📦 clock-app/
+├── 📂 components/ # Reusable UI components
+├── 📂 screens/ # Main feature screens (Alarm, WorldClock, etc.)
+├── 📂 utils/ # Helper functions and time logic
+├── 📂 assets/ # Images, icons, sound files
+├── App.js # Entry point
+├── navigation.js # Navigation setup
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 📱 Setup & Installation
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/your-username/clock-app.git
+cd clock-app
+npm install      # or yarn install
+npx react-native run-android   # For Android
+npx react-native run-ios       # For iOS (Mac only)
+Note: For Expo users, replace with:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+bash
+Copy
+Edit
+npm install -g expo-cli
+expo start
+🧪 Testing
+Manual testing on Android and iOS simulators/devices
 
-## Learn more
+Use jest and react-native-testing-library for unit tests
 
-To learn more about developing your project with Expo, look at the following resources:
+📅 Planned Enhancements
+📦 Cloud sync for alarm and world clock settings
+🗣 Voice assistant integration (e.g. "Set alarm for 6 AM")
+📊 Weekly stats for stopwatch usage
+🕳️ Widgets support for homescreen clocks
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🙌 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+📄 License
+This project is licensed under the MIT License.
